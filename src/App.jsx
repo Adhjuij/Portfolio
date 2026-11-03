@@ -440,7 +440,7 @@ export default function App() {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-white/15 bg-neutral-900 shadow-2xl relative">
               <img 
-                src="src\Assets\anjal.jpeg" 
+                src="\Assets\anjal.jpeg" 
                 alt="Anjal Morang" 
                 className="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700" 
               />

@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { 
-  ArrowUpRight, Plus, Eye, Film, Sparkles, Send, Lock, 
-  ChevronRight, Clapperboard, Disc, Download, Share2, HardDrive, Menu, X
+  ArrowUpRight, Plus, Eye, Film,  Send, Lock, 
+ Clapperboard, Disc, Download, Share2, HardDrive
 } from 'lucide-react';
 
 import { CATEGORIES, INITIAL_PROJECTS } from './data/initialProjects';

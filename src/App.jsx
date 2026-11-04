@@ -440,7 +440,7 @@ export default function App() {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-white/15 bg-neutral-900 shadow-2xl relative">
               <img 
-                src="assets/anjal.jpeg" 
+                src="https://res.cloudinary.com/ni1ratnz/image/upload/v1793758028/anjal.jpg" 
                 alt="Anjal Morang" 
                 className="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700" 
                 onError={(e) => {

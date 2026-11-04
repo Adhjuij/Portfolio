@@ -1,7 +1,7 @@
-import { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
-  ArrowUpRight, Plus, Eye, Film,  Send, Lock, 
- Clapperboard, Disc, Download, Share2, HardDrive
+  ArrowUpRight, Plus, Eye, Film, Sparkles, Send, Lock, 
+  ChevronRight, Clapperboard, Disc, Download, Share2, HardDrive
 } from 'lucide-react';
 
 import { CATEGORIES, INITIAL_PROJECTS } from './data/initialProjects';
@@ -11,6 +11,7 @@ import ProjectDetailModal from './components/ProjectDetailModal';
 import DriveScreeningModal from './components/DriveScreeningModal';
 import ProjectEditorModal from './components/ProjectEditorModal';
 import AdminAuthModal from './components/AdminAuthModal';
+
 export default function App() {
   const [projects, setProjects] = useState(() => {
     try {
@@ -18,7 +19,6 @@ export default function App() {
       return saved ? JSON.parse(saved) : INITIAL_PROJECTS;
     } catch {
       return INITIAL_PROJECTS;
-
     }
   });
 
@@ -61,14 +61,6 @@ export default function App() {
       localStorage.setItem('portfolio_projects_v3', JSON.stringify(projects));
     } catch {
       // Catch block without unused variable warning
-    }
-  }, [projects]);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem('portfolio_projects_v3', JSON.stringify(projects));
-    } catch (e) {
-      console.error(e);
     }
   }, [projects]);
 
@@ -182,10 +174,10 @@ export default function App() {
               AM
             </div>
             <div className="flex flex-col">
-              <span className="san-serif tracking-wider text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-400">
+              <span className="font-serif tracking-wider text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-400">
                 ANJAL MORANG
               </span>
-              <span className="text-[10px] font-mono tracking-widest text-[#00f2fe] uppercase">Documentaries & Explainers</span>
+              <span className="text-[10px] font-mono tracking-widest text-[#00f2fe] uppercase">Documentary & Visual Editor</span>
             </div>
           </a>
 
@@ -251,7 +243,7 @@ export default function App() {
               <span>Documentary Film & Drive Screening Portal</span>
             </div>
 
-            <h1 className="text-5xl sm:text-7xl xl:text-8xl tracking-tight playfair-display text-white leading-[0.95] text-left">
+            <h1 className="text-5xl sm:text-7xl xl:text-8xl font-extrabold tracking-tight font-serif text-white leading-[0.95] text-left">
               REALITY <br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00f2fe] via-cyan-200 to-[#7928ca] italic font-light">
                 CRAFTED
@@ -301,9 +293,9 @@ export default function App() {
             <div className="absolute bottom-4 right-4 bg-black/60 backdrop-blur-xl border border-white/10 p-4 rounded-2xl max-w-xs shadow-2xl pointer-events-none hidden sm:block">
               <div className="flex items-center space-x-3 mb-1">
                 <Disc className="w-3.5 h-3.5 text-[#00f2fe] animate-spin-slow" />
-                <span className="text-xs font-mono uppercase tracking-widest text-[#00f2fe]">Interactive </span>
+                <span className="text-xs font-mono uppercase tracking-widest text-[#00f2fe]">Interactive Film-Reel Prism</span>
               </div>
-              <p className="text-xs text-neutral-400 font-mono">Abrstraction unfolding</p>
+              <p className="text-xs text-neutral-400 font-mono">Procedural 3D camera aperture & glass reel sculpture reacting to cursor physics.</p>
             </div>
           </div>
 
@@ -314,7 +306,7 @@ export default function App() {
       <section id="work" className="py-24 px-6 max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-white/10 pb-8">
           <div>
-            <span className="text-xs font-mono tracking-widest text-[#00f2fe] uppercase">Curated Edits</span>
+            <span className="text-xs font-mono tracking-widest text-[#00f2fe] uppercase">Curated Filmography</span>
             <h2 className="text-4xl md:text-6xl font-bold font-serif text-white mt-1">Selected Documentaries & Visuals</h2>
           </div>
 
@@ -389,7 +381,15 @@ export default function App() {
               <div key={proj.id} className="p-4 hover:bg-white/5 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-10 rounded-lg overflow-hidden bg-black relative flex-shrink-0 cursor-pointer" onClick={() => setScreeningProject(proj)}>
-                    <img src={proj.thumbnail} alt={proj.title} className="w-full h-full object-cover" />
+                    <img 
+                      src={proj.thumbnail} 
+                      alt={proj.title} 
+                      className="w-full h-full object-cover" 
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=600&auto=format&fit=crop';
+                      }}
+                    />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                       <Eye className="w-4 h-4 text-white" />
                     </div>
@@ -440,14 +440,24 @@ export default function App() {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-white/15 bg-neutral-900 shadow-2xl relative">
               <img 
-                src="public/assets/anjal.jpeg" 
+                src="assets/anjal.jpeg" 
                 alt="Anjal Morang" 
                 className="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700" 
+                onError={(e) => {
+                  // Fallback to capitalized/lowercase alternatives if file case differs on Linux/Vercel
+                  if (!e.target.dataset.tried) {
+                    e.target.dataset.tried = "1";
+                    e.target.src = "/assets/anjal.jpeg";
+                  } else {
+                    e.target.onerror = null;
+                    e.target.src = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop';
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#08080c] via-transparent to-transparent opacity-80" />
               <div className="absolute bottom-6 left-6 right-6">
                 <span className="text-xs font-mono text-[#00f2fe] uppercase">Anjal Morang</span>
-                <h4 className="text-xl font-serif font-bold text-white">Documentary Editor</h4>
+                <h4 className="text-xl font-serif font-bold text-white">Documentary Film Editor</h4>
               </div>
             </div>
           </div>
@@ -455,10 +465,10 @@ export default function App() {
           <div className="lg:col-span-7 space-y-6">
             <span className="text-xs font-mono tracking-widest text-[#00f2fe] uppercase">Editorial Craft & Vision</span>
             <h2 className="text-4xl md:text-5xl font-bold font-serif text-white">
-              Professional Documentary Editor
+              Sifting Truth From Archival Fragments
             </h2>
             <p className="text-neutral-300 font-light leading-relaxed">
-              Specializing in non-fiction storytelling, investigative documentary edits, and cultural feature cutdowns. My editing methodology centers around narrative balance, deliberate rhythmic pacing, and seamless integration of spatial audio and with 3D graphics.
+              Specializing in non-fiction storytelling, investigative documentary edits, and cultural feature cutdowns. My editing methodology centers around narrative balance, deliberate rhythmic pacing, and seamless integration of spatial audio and 3D graphics.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10 font-mono text-xs">
@@ -468,7 +478,7 @@ export default function App() {
               </div>
               <div>
                 <span className="text-[#00f2fe] font-bold block mb-1">Color & Finishing</span>
-                <span className="text-neutral-400">After Effects, DaVinci ACES Workflow, Film Grain Synthesis</span>
+                <span className="text-neutral-400">DaVinci ACES Workflow, Film Grain Synthesis</span>
               </div>
             </div>
           </div>

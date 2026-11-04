@@ -450,7 +450,7 @@ export default function App() {
                     e.target.src = "/assets/anjal.jpeg";
                   } else {
                     e.target.onerror = null;
-                    e.target.src = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop';
+                    e.target.src = 'https://res.cloudinary.com/ni1ratnz/image/upload/v1793758028/anjal.jpg';
                   }
                 }}
               />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { 
   ArrowUpRight, Plus, Eye, Film, Sparkles, Send, Lock, 
   ChevronRight, Clapperboard, Disc, Download, Share2, HardDrive, Menu, X

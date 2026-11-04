@@ -174,10 +174,10 @@ export default function App() {
               AM
             </div>
             <div className="flex flex-col">
-              <span className="font-serif tracking-wider text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-400">
+              <span className="san-serif tracking-wider text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-400">
                 ANJAL MORANG
               </span>
-              <span className="text-[10px] font-mono tracking-widest text-[#00f2fe] uppercase">Documentary & Visual Editor</span>
+              <span className="text-[10px] font-mono tracking-widest text-[#00f2fe] uppercase">Documentary Editor</span>
             </div>
           </a>
 
@@ -295,7 +295,7 @@ export default function App() {
                 <Disc className="w-3.5 h-3.5 text-[#00f2fe] animate-spin-slow" />
                 <span className="text-xs font-mono uppercase tracking-widest text-[#00f2fe]">Interactive Film-Reel Prism</span>
               </div>
-              <p className="text-xs text-neutral-400 font-mono">Procedural 3D camera aperture & glass reel sculpture reacting to cursor physics.</p>
+              <p className="text-xs text-neutral-400 font-mono">Interactive Abstraction.</p>
             </div>
           </div>
 
@@ -306,8 +306,8 @@ export default function App() {
       <section id="work" className="py-24 px-6 max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-white/10 pb-8">
           <div>
-            <span className="text-xs font-mono tracking-widest text-[#00f2fe] uppercase">Curated Filmography</span>
-            <h2 className="text-4xl md:text-6xl font-bold font-serif text-white mt-1">Selected Documentaries & Visuals</h2>
+            <span className="text-xs font-mono tracking-widest text-[#00f2fe] uppercase">Curated Edits</span>
+            <h2 className="text-4xl md:text-6xl font-bold font-serif text-white mt-1">Selected Documentaries & Explainers</h2>
           </div>
 
           <div className="mt-6 md:mt-0 flex items-center space-x-4">
@@ -457,7 +457,7 @@ export default function App() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#08080c] via-transparent to-transparent opacity-80" />
               <div className="absolute bottom-6 left-6 right-6">
                 <span className="text-xs font-mono text-[#00f2fe] uppercase">Anjal Morang</span>
-                <h4 className="text-xl font-serif font-bold text-white">Documentary Film Editor</h4>
+                <h4 className="text-xl font-serif font-bold text-white">Documentary Editor</h4>
               </div>
             </div>
           </div>
@@ -465,7 +465,7 @@ export default function App() {
           <div className="lg:col-span-7 space-y-6">
             <span className="text-xs font-mono tracking-widest text-[#00f2fe] uppercase">Editorial Craft & Vision</span>
             <h2 className="text-4xl md:text-5xl font-bold font-serif text-white">
-              Sifting Truth From Archival Fragments
+              Shifting Truth From Archival Fragments
             </h2>
             <p className="text-neutral-300 font-light leading-relaxed">
               Specializing in non-fiction storytelling, investigative documentary edits, and cultural feature cutdowns. My editing methodology centers around narrative balance, deliberate rhythmic pacing, and seamless integration of spatial audio and 3D graphics.
@@ -474,7 +474,7 @@ export default function App() {
             <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10 font-mono text-xs">
               <div>
                 <span className="text-[#00f2fe] font-bold block mb-1">Editing NLEs</span>
-                <span className="text-neutral-400">Premiere Pro, DaVinci Resolve, Avid Media Composer</span>
+                <span className="text-neutral-400">Premiere Pro, DaVinci Resolve, After Effects</span>
               </div>
               <div>
                 <span className="text-[#00f2fe] font-bold block mb-1">Color & Finishing</span>

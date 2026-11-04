@@ -27,18 +27,6 @@ export const INITIAL_PROJECTS = [
     fps: '23.976 fps',
     audio: '5.1 Surround Sound 24-bit',
     reviewNotes: [
-      {
-        id: 'c1',
-        author: 'Director Sarah',
-        timestamp: '03:14',
-        text: 'Trim 12 frames off this archival transition.'
-      },
-      {
-        id: 'c2',
-        author: 'Producer Mark',
-        timestamp: '08:45',
-        text: 'Color response on the interview looks fantastic.'
-      }
     ]
   },
   {
@@ -48,7 +36,7 @@ export const INITIAL_PROJECTS = [
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759031/Project9.jpeg',
     videoUrl: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759031/Project9.mp4',
     duration: '00:07',
-    description: 'Documentary series edit. Features Ted Bundy.',
+    description: 'Documentary series edit. Features Ted Bunty.',
     client: 'Self-Initiated',
     year: '2024',
     tools: ['DaVinci Resolve', 'Premiere Pro', 'After Effects'],
@@ -64,12 +52,12 @@ export const INITIAL_PROJECTS = [
   },
   {
     id: 'p3',
-    title: 'Consipiracy on 9/11',
+    title: 'Conspiracy on 9/11',
     category: 'Documentary',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759383/Project6.jpeg',
     videoUrl: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759383/Project6.mp4',
     duration: '0.11',
-    description: 'A documentary intro on a popular consipiracy weaving real pictures to create an impact.',
+    description: 'A documentary intro on a popular conspiracy weaving real pictures to create an impact.',
     client: 'Self-Initiated',
     year: '2023',
     tools: ['Premiere Pro', 'After Effects', 'Blender'],
@@ -85,7 +73,7 @@ export const INITIAL_PROJECTS = [
   },
   {
     id: 'p4',
-    title: 'MJ Trials',
+    title: 'Michael Joe Jackson Trials',
     category: 'Experiments',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759382/Project12.jpeg',
     videoUrl: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759382/Project12.mp4',
@@ -214,7 +202,7 @@ export const INITIAL_PROJECTS = [
   ,
   {
     id: 'p10',
-    title: 'Crimanal Trail of One BHAGAT SINGH',
+    title: 'Criminal Trail of BHAGAT SINGH',
     category: 'Documentary',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759286/Project3.jpeg',
     videoUrl: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759286/Project3.mp4',
@@ -236,7 +224,7 @@ export const INITIAL_PROJECTS = [
   ,
   {
     id: 'p11',
-    title: 'Gandhi & Subhash bose (Two side of the stuggle)',
+    title: 'Gandhi & Subhash Bose (Two side of the stuggle)',
     category: '3D Design',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759267/project5.jpeg',
     videoUrl: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759267/project5.mp4',
@@ -258,7 +246,7 @@ export const INITIAL_PROJECTS = [
   ,
   {
     id: 'p12',
-    title: 'Puwrna Swaraja',
+    title: 'Purna Swaraja',
     category: 'Documentary',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759360/PurnaSwaraja.jpeg',
     videoUrl: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759360/PurnaSwaraja.mp4 ',
@@ -280,7 +268,7 @@ export const INITIAL_PROJECTS = [
   ,
   {
     id: 'p13',
-    title: 'MJ Intro',
+    title: 'Michael Jackson Intro',
     category: 'Documentary',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759359/Project13.jpeg',
     videoUrl: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759359/Project13.mp4 ',

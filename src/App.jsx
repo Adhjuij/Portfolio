@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { 
   ArrowUpRight, Plus, Eye, Film,  Send, Lock, 
- Clapperboard, Disc, Download, Share2, HardDrive
+  Clapperboard, Disc, Download, Share2, HardDrive
 } from 'lucide-react';
 
 import { CATEGORIES, INITIAL_PROJECTS } from './data/initialProjects';
@@ -18,7 +18,6 @@ export default function App() {
       return saved ? JSON.parse(saved) : INITIAL_PROJECTS;
     } catch {
       return INITIAL_PROJECTS;
-
     }
   });
 
@@ -170,22 +169,22 @@ export default function App() {
       </div>
 
       {/* NAVIGATION BAR */}
-      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[#08080c]/70 border-b border-white/10 px-6 py-4 transition-all duration-300">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[#08080c]/70 border-b border-white/10 px-4 sm:px-6 py-3 sm:py-4 transition-all duration-300">
+        <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
           <a 
             href="#hero" 
-            className="group flex items-center space-x-3 text-lg font-bold tracking-tight text-white"
+            className="group flex items-center space-x-2.5 text-base sm:text-lg font-bold tracking-tight text-white"
             onMouseEnter={() => setCursorHovered(true)}
             onMouseLeave={() => setCursorHovered(false)}
           >
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#00f2fe] to-[#4facfe] flex items-center justify-center font-mono font-black text-black shadow-lg shadow-[#00f2fe]/20 group-hover:rotate-6 transition-transform">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-gradient-to-br from-[#00f2fe] to-[#4facfe] flex items-center justify-center font-mono font-black text-black shadow-lg shadow-[#00f2fe]/20 group-hover:rotate-6 transition-transform text-sm">
               AM
             </div>
             <div className="flex flex-col">
-              <span className="san-serif tracking-wider text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-400">
+              <span className="san-serif tracking-wider text-sm sm:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-400">
                 ANJAL MORANG
               </span>
-              <span className="text-[10px] font-mono tracking-widest text-[#00f2fe] uppercase">Documentaries & Explainers</span>
+              <span className="text-[9px] sm:text-[10px] font-mono tracking-widest text-[#00f2fe] uppercase">Documentaries & Explainers</span>
             </div>
           </a>
 
@@ -203,17 +202,17 @@ export default function App() {
             ))}
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3 ml-auto md:ml-0">
             {isAdmin ? (
-              <div className="flex items-center space-x-2 bg-amber-500/10 border border-amber-500/30 px-3 py-1.5 rounded-full text-xs font-mono text-amber-400">
+              <div className="flex items-center space-x-2 bg-amber-500/10 border border-amber-500/30 px-2.5 py-1.5 rounded-full text-[10px] sm:text-xs font-mono text-amber-400">
                 <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
                 <span>ADMIN ACTIVE</span>
                 <button 
                   onClick={() => setIsAdmin(false)} 
-                  className="ml-2 hover:text-white"
+                  className="ml-1.5 hover:text-white"
                   title="Exit Admin Mode"
                 >
-                  <Lock className="w-3.5 h-3.5" />
+                  <Lock className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                 </button>
               </div>
             ) : (
@@ -224,25 +223,25 @@ export default function App() {
                 onMouseEnter={() => setCursorHovered(true)}
                 onMouseLeave={() => setCursorHovered(false)}
               >
-                <Lock className="w-4 h-4" />
+                <Lock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </button>
             )}
 
             <a 
               href="#contact" 
-              className="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono text-xs tracking-widest font-semibold text-black uppercase rounded-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] shadow-lg shadow-[#00f2fe]/20 hover:shadow-[#00f2fe]/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+              className="relative inline-flex items-center justify-center px-3.5 sm:px-5 py-2 overflow-hidden font-mono text-[10px] sm:text-xs tracking-widest font-semibold text-black uppercase rounded-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] shadow-lg shadow-[#00f2fe]/20 hover:shadow-[#00f2fe]/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
               onMouseEnter={() => setCursorHovered(true)}
               onMouseLeave={() => setCursorHovered(false)}
             >
               <span>Collaborate</span>
-              <ArrowUpRight className="w-3.5 h-3.5 ml-1.5" />
+              <ArrowUpRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 ml-1" />
             </a>
           </div>
         </div>
       </nav>
 
       {/* HERO SECTION */}
-      <section id="hero" className="relative min-h-screen pt-24 pb-12 flex items-center justify-center z-10 overflow-hidden">
+      <section id="hero" className="relative min-h-screen pt-28 sm:pt-24 pb-12 flex items-center justify-center z-10 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           <div className="lg:col-span-7 space-y-6 z-20">
@@ -440,7 +439,7 @@ export default function App() {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-white/15 bg-neutral-900 shadow-2xl relative">
               <img 
-                src="https://res.cloudinary.com/ni1ratnz/image/upload/v1793783549/anjal_morang_portrait.png" 
+                src="src\Assets\anjal.jpeg" 
                 alt="Anjal Morang" 
                 className="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700" 
               />

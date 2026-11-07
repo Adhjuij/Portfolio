@@ -441,7 +441,7 @@ export default function App() {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-white/15 bg-neutral-900 shadow-2xl relative">
               <img 
-                src="src\Assets\anjal.jpeg" 
+                src="https://res.cloudinary.com/ni1ratnz/image/upload/v1794027856/WhatsApp_Image_2026-11-07_at_10.21.27.jpg" 
                 alt="Anjal Morang" 
                 className="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700" 
               />

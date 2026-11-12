@@ -5,7 +5,8 @@ export const CATEGORIES = [
   'Video Editing',
   '3D Design',
   'Motion Graphics',
-  'Experiments'
+  'Experiments',
+  'Explainers'
 ];
 
 export const INITIAL_PROJECTS = [
@@ -94,6 +95,27 @@ export const INITIAL_PROJECTS = [
   },
   {
     id: 'p5',
+    title: 'The MidTerm election',
+    category: 'Explainers',
+    thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1794466467/midterm.jpeg',
+    videoUrl: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1794466467/midterm.mp4',
+    duration: '0.10',
+    description: 'A vox style explainer',
+    client: 'Self-Initiated',
+    year: '2024',
+    tools: ['Premiere Pro', 'After Effects', 'DaVinci Resolve'],
+    tags: ['Visual Essay', 'Experimental'],
+    featured: false,
+    published: true,
+    views: '12.9k',
+    fileSize: '26 MB',
+    codec: 'H.264 / 1080p',
+    fps: '23.976 fps',
+    audio: 'Binaural 3D Audio',
+    reviewNotes: []
+  },
+  {
+    id: 'p6',
     title: 'Famous Indian occult case',
     category: 'Video Editing',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759239/project2.jpeg',
@@ -114,7 +136,7 @@ export const INITIAL_PROJECTS = [
     reviewNotes: []
   },
   {
-    id: 'p6',
+    id: 'p7',
     title: 'The Azad Hind Fauz',
     category: 'Experiments',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793758732/Ina.jpeg',
@@ -136,7 +158,7 @@ export const INITIAL_PROJECTS = [
   }
 ,
   {
-    id: 'p7',
+    id: 'p8',
     title: 'Indian Problems',
     category: '3D Design',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759493/Project1.jpeg',
@@ -158,7 +180,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p8',
+    id: 'p9',
     title: 'Indian Independence Story',
     category: '3D Design',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759105/Project4.jpeg',
@@ -179,7 +201,7 @@ export const INITIAL_PROJECTS = [
     reviewNotes: []
   },
   {
-    id: 'p9',
+    id: 'p10',
     title: 'Independence Story',
     category: '3D Desig',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759285/Project7.jpeg',
@@ -201,7 +223,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p10',
+    id: 'p11',
     title: 'Criminal Trail of BHAGAT SINGH',
     category: 'Documentary',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759286/Project3.jpeg',
@@ -223,7 +245,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p11',
+    id: 'p12',
     title: 'Gandhi & Subhash Bose (Two side of the stuggle)',
     category: '3D Design',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759267/project5.jpeg',
@@ -245,7 +267,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p12',
+    id: 'p13',
     title: 'Purna Swaraja',
     category: 'Documentary',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759360/PurnaSwaraja.jpeg',
@@ -267,7 +289,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p13',
+    id: 'p14',
     title: 'Michael Jackson Intro',
     category: 'Documentary',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759359/Project13.jpeg',
@@ -289,7 +311,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p14',
+    id: 'p15',
     title: 'Experiments',
     category: '3D Design',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759193/Project11.jpeg',

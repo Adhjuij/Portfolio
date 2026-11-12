@@ -225,7 +225,7 @@ export const INITIAL_PROJECTS = [
   {
     id: 'p11',
     title: 'Independence Story',
-    category: '3D Desig',
+    category: '3D Design',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759285/Project7.jpeg',
     videoUrl: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759285/Project7.mp4',
     duration: '00:09',

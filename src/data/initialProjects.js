@@ -179,8 +179,30 @@ export const INITIAL_PROJECTS = [
     reviewNotes: []
   }
   ,
-  {
+    {
     id: 'p9',
+    title: 'Modi',
+    category: 'Explainers',
+    thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1794466494/Modi.jpeg',
+    videoUrl: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1794466494/Modi.mp4',
+    duration: '00:03',
+    description: 'Modi.',
+    client: 'Self-Initiated',
+    year: '2024',
+    tools: [ 'After Effects'],
+    tags: ['Title Sequence', 'Raw'],
+    featured: false,
+    published: true,
+    views: '15.2k',
+    fileSize: '73 MB',
+    codec: 'DNxHR HQX',
+    fps: '25.0 fps',
+    audio: 'Mute',
+    reviewNotes: []
+  }
+  ,
+  {
+    id: 'p10',
     title: 'Indian Independence Story',
     category: '3D Design',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759105/Project4.jpeg',
@@ -201,7 +223,7 @@ export const INITIAL_PROJECTS = [
     reviewNotes: []
   },
   {
-    id: 'p10',
+    id: 'p11',
     title: 'Independence Story',
     category: '3D Desig',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759285/Project7.jpeg',
@@ -223,7 +245,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p11',
+    id: 'p12',
     title: 'Criminal Trail of BHAGAT SINGH',
     category: 'Documentary',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759286/Project3.jpeg',
@@ -245,7 +267,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p12',
+    id: 'p13',
     title: 'Gandhi & Subhash Bose (Two side of the stuggle)',
     category: '3D Design',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759267/project5.jpeg',
@@ -267,7 +289,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p13',
+    id: 'p14',
     title: 'Purna Swaraja',
     category: 'Documentary',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759360/PurnaSwaraja.jpeg',
@@ -289,7 +311,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p14',
+    id: 'p15',
     title: 'Michael Jackson Intro',
     category: 'Documentary',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759359/Project13.jpeg',
@@ -311,7 +333,7 @@ export const INITIAL_PROJECTS = [
   }
   ,
   {
-    id: 'p15',
+    id: 'p16',
     title: 'Experiments',
     category: '3D Design',
     thumbnail: 'https://res.cloudinary.com/ni1ratnz/video/upload/v1793759193/Project11.jpeg',

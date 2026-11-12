@@ -179,7 +179,7 @@ export const INITIAL_PROJECTS = [
     reviewNotes: []
   }
   ,
-    {
+  {
     id: 'p9',
     title: 'Modi',
     category: 'Explainers',
@@ -194,7 +194,7 @@ export const INITIAL_PROJECTS = [
     featured: false,
     published: true,
     views: '15.2k',
-    fileSize: '73 MB',
+    fileSize: '3 MB',
     codec: 'DNxHR HQX',
     fps: '25.0 fps',
     audio: 'Mute',

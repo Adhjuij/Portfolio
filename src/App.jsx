@@ -182,7 +182,7 @@ export default function App() {
             </div>
             <div className="flex flex-col">
               <span className="san-serif tracking-wider text-sm sm:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-400">
-                ANJAL MORANG \n LUCKY PEGU
+                ANJAL MORANG<br>LUCKY PEGU
               </span>
               <span className="text-[9px] sm:text-[10px] font-mono tracking-widest text-[#00f2fe] uppercase">Documentaries & Explainers</span>
             </div>
